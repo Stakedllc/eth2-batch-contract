@@ -57,7 +57,7 @@ contract BatchDeposit {
     ///         Will create a deposit transaction per index of the arrays submitted.
     ///
     /// @param pubkeys - An array of BLS12-381 public keys.
-    /// @param withdrawal_credentials - An array of public keys for withdrawals.
+    /// @param withdrawal_credentials - An array of commitment to public key for withdrawals.
     /// @param signatures - An array of BLS12-381 signatures.
     /// @param deposit_data_roots - An array of the SHA-256 hash of the SSZ-encoded DepositData object.
     function batchDeposit(
